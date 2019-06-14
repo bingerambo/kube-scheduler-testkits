@@ -1,4 +1,4 @@
-Kube-scheduler-testkits is a performance testing tool for kube-scheduler's throughput，which can also grab cpu-profile, mem-profile and go-trace. It can be easily used and extended than kubernetes e2e test.
+Kube-scheduler-testkits is a performance testing tool for kube-scheduler's throughput，which can also grab cpu-profile, mem-profile and go-trace. It can be easier used and extended than kubernetes e2e test.
 
 By default, it grabs cpu-profile and go-trace for five seconds every one second.
 
@@ -8,7 +8,7 @@ The best practice:
 
 ## Build
 ``
-GO111MODULE=on go build
+GOPROXY=https://athens.azurefd.net GO111MODULE=on go build
 ``
 >Precondition: Go >= 1.11
 
